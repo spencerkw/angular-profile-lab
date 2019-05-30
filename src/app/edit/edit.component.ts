@@ -19,7 +19,6 @@ export class EditComponent implements OnInit {
   }
 
   submitProfile(form) {
-    console.log(form);
     let newProfile: UserProfile = {
       name: form.value.name,
       contactInfo: form.value.contactInfo,

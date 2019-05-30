@@ -1,8 +1,8 @@
 <main>
   <section class="edit-section">
-    <p>Use the form below to update your profile.</p>
-
     <form #editForm="ngForm" (ngSubmit)="submitProfile(editForm)">
+      <p>Use the form below to update your profile.</p>
+
       <label for="name">Name</label>
       <input id="name" type="text" [(ngModel)]="profile.name" name="name">
 
