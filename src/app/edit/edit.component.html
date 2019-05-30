@@ -4,13 +4,13 @@
 
     <form #editForm="ngForm" (ngSubmit)="submitProfile(editForm)">
       <label for="name">Name</label>
-      <input id="name" type="text" ngModel name="name">
+      <input id="name" type="text" [(ngModel)]="profile.name" name="name">
 
       <label for="contact-info">Contact</label>
-      <input id="contact-info" type="text" ngModel name="contactInfo">
+      <input id="contact-info" type="text" [(ngModel)]="profile.contactInfo" name="contactInfo">
 
       <label for="bio">Bio</label>
-      <textarea id="bio" name="bio" rows="6" ngModel></textarea>
+      <textarea id="bio" name="bio" rows="6" [(ngModel)]="profile.bio"></textarea>
       <button>Update</button>
     </form>
   </section>
