@@ -1,3 +1,17 @@
-<p>
-  edit works!
-</p>
+<main>
+  <section class="edit-section">
+    <p>Use the form below to update your profile.</p>
+
+    <form #editForm="ngForm" (ngSubmit)="submitProfile(editForm)">
+      <label for="name">Name</label>
+      <input id="name" type="text" ngModel name="name">
+
+      <label for="contact-info">Contact</label>
+      <input id="contact-info" type="text" ngModel name="contactInfo">
+
+      <label for="bio">Bio</label>
+      <textarea id="bio" name="bio" rows="6" ngModel></textarea>
+      <button>Update</button>
+    </form>
+  </section>
+</main>
