@@ -9,28 +9,9 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
-  private profile: UserProfile = {
-    name: "Spencer K-W",
-    contactInfo: "keashlywarters@gmail.com",
-    bio: "what a guy"
-  };
-
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  getUserProfile(): UserProfile {
-    return this.profile;
-  }
-
-  setUserProfile(newProfile: UserProfile): UserProfile {
-    this.profile = newProfile;
-    return this.profile;
-  }
-
-  editProfile(): void {
-    this.router.navigate(["edit-profile"]);
   }
 
 }
